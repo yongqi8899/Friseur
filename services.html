@@ -12,48 +12,113 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {
-          fontSize: {
-            sm: "0.750rem",
-            base: "1rem",
-            xl: "1.333rem",
-            "2xl": "1.777rem",
-            "3xl": "2.369rem",
-            "4xl": "3.158rem",
-            "5xl": "4.210rem",
+          theme: {
+              extend: {
+                   colors: {
+                      'text': '#180202',
+                      'background': '#fafafa',
+                      'primary': '#ffaa99',
+                      'secondary': '#e6e6e5'
+                  },
+                  fontSize: {
+                      sm: '0.750rem',
+                      base: '1rem',
+                      xl: '1.333rem',
+                      '2xl': '1.777rem',
+                      '3xl': '2.369rem',
+                      '4xl': '3.158rem',
+                      '5xl': '4.210rem',
+                  },
+                  fontFamily: {
+                      heading: 'DM Serif Display',
+                      body: 'DM Serif Display',
+                  },
+                  fontWeight: {
+                      normal: '400',
+                      bold: '700',
+                  },
+              },
           },
-          colors: {
-            text: "#180202",
-            background: "#fafafa",
-            primary: "#ffaa99",
-            secondary: "#e6e6e5",
-          },
-          fontFamily: {
-            "dm-serif": ["DM Serif Display", "ui-serif", "Georgia"],
-          },
-          fontWeight: {
-            normal: "400",
-            bold: "700",
-          },
-        },
       };
     </script>
     <title>Friseur</title>
   </head>
-  <body class="font-dm-serif">
-    <header>
-      <h1>LOGO</h1>
+  <body class="font-body">
+    <header class="font-body p-10 flex flex-wrap gap-8 items-center justify-between">
+      <h1 class="text-xl bg-primary p-2 rounded-md drop-shadow-md">Friseursalon Lilly</h1>
       <nav>
-        <ul>
+        <ul class="flex gap-10 text-xl">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <div class="w-[122px] h-0"></div>
     </header>
-    <main class="container mx-auto bg-background">
-      <section>Services</section>
+    <main class="container flex flex-col items-center justify-center m-auto mb-12">
+      <section>
+      <div class="w-screen">
+        <figure >
+          <img src="./assets/img/Banner.png" alt="ein Image über Haare" class="object-cover object-cover w-full max-h-full"/>
+        </figure>
+      </div>
+     </section>
+      <section class="flex flex-col items-center justify-center">
+        <h1 class="text-xl md:text-3xl  my-6">Unsere Services für dein Haar</h1>
+        <p class="text-center">
+          In unserem Friseursalon bieten wir dir ein breites Spektrum an
+          Dienstleistungen.
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-5 mt-10">
+          <div class="flex flex-col items-center justify-around bg-primary text-white p-5 max-w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Kinder</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 20€</button>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-primary text-white p-5 w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Herren</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 30€</button>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-primary text-white p-5 w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Damen</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 50€</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>footer</footer>
+    <footer class="font-body p-12 bg-[#1d1d1d] flex justify-evenly flex-wrap gap-10">
+      <div>
+        <p class="text-xl !text-white">Friseursalon Lilly</p>
+        <div class="flex gap-5 mt-5 -ml-1">
+          <img src="assets\img\facebook-app-symbol.png" alt="facebook-app-symbol" class="size-8 invert">
+          <img src="assets\img\instagram-logo.png" alt="instagram-logo" class="size-8 invert">
+          <img src="assets\img\youtube.png" alt="youtube" class="size-8 invert">
+        </div>
+      </div>
+      <div class="flex">
+        <nav>
+          <ul class="flex flex-col gap-10">
+            <li class="!text-white"><a href="./index.html">Home</a></li>
+            <li class="!text-white"><a href="./services.html">Services</a></li>
+            <li class="!text-white"><a href="./contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <p class="text-xl mb-2 !text-white">Öffnungszeiten:</p>
+        <p class="!text-white">Mo-Fr: 10-20 Uhr</p>
+        <p class="!text-white">Sa: 10-18 Uhr</p>
+      </div>
+      <div>
+        <p class="text-xl !text-white">Addresse:</p>
+        <p class="!text-white">Berliner Straße 12</p>
+        <p class="mb-4 !text-white">80331 München</p>
+        <p class="!text-white">Telefon: 030-12345678</p>
+        <p class="!text-white">Email: lilly@salon.de</p>
+        
+      </div>
+    </footer>
   </body>
 </html>
