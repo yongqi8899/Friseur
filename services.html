@@ -24,6 +24,7 @@
           },
           colors: {
             text: "#180202",
+            white: "#fff",
             background: "#fafafa",
             primary: "#ffaa99",
             secondary: "#e6e6e5",
@@ -51,8 +52,36 @@
         </ul>
       </nav>
     </header>
-    <main class="container mx-auto bg-background">
-      <section>Services</section>
+    <div class="w-full">
+      <figure>
+        <img src="./assets/img/Banner.png" alt="ein Image über Haare" class="block w-full"/>
+      </figure>
+    </div>
+    <main class="container flex flex-col items-center justify-center m-auto">
+      <section class="flex flex-col items-center justify-center">
+        <h1 class="text-xl md:text-3xl  my-6">Unsere Services für dein Haar</h1>
+        <p class="text-center">
+          In unserem Friseursalon bieten wir dir ein breites Spektrum an
+          Dienstleistungen.
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-5 mt-10">
+          <div class="flex flex-col items-center justify-around bg-primary text-white p-5 max-w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Kinder</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 20€</button>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-primary text-white p-5 w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Herren</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 30€</button>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-primary text-white p-5 w-72 gap-4 rounded-md">
+            <h2 class="text-xl">Damen</h2>
+            <p class="text-base text-center">inklusive Waschen, Schneiden, Stylen</p>
+            <button class="text-text bg-white w-20 rounded">ab 50€</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>footer</footer>
   </body>
