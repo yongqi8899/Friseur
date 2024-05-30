@@ -38,29 +38,40 @@
     <title>Friseursalon Lilly</title>
 </head>
 <body>
+    <header class="p-10 flex flex-wrap gap-8 items-center justify-between">
+        <h1 class="text-xl bg-primary p-2 rounded-md drop-shadow-md">Friseursalon Lilly</h1>
+        <nav>
+          <ul class="flex gap-10 text-xl">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="w-[122px] h-0"></div>
+      </header>
     <main class="bg-background text-text-base font-body font-normal">
         <section class="bg-primary flex justify-around max-[500px]:flex-col max-[500px]:items-center">
             <div class="bg-background m-6 grid rounded-lg max-[500px]:w-50">
-                <h1 class="font-heading font-bold text-2xl mt-6 ml-6 mr-4 text-primary">Verliebt dich neu <br>in deine Haare.</h1>
+                <h1 class="!text-text font-heading font-bold text-2xl mt-6 ml-6 mr-4 text-primary">Verliebt dich neu <br>in deine Haare.</h1>
                 <p class="ml-6 mr-6">Bei Lilly bist du in den besten Händen.</p>
             </div>
             <div>
-                <img class="size-64 mt-6 mb-6 rounded-lg" src="/Friseur/assets/img/Hero Image.png" alt="Frau mit schöner Styling">
+                <img class="size-64 mt-6 mb-6 rounded-lg" src="/Friseur/assets/img/Hero Image.png" alt="Frau mit schönem Styling">
             </div>
         </section>
         <section class="flex justify-around max-[500px]:flex-col max-[500px]:items-center">
             <div class="mt-6 mb-6 mr-4 ml-4">
-                <h2 class="font-heading font-bold text-2xl underline underline-offset-1 text-primary">Willkommen bei Lilly</h2>
+                <h2 class="!text-text font-heading font-bold text-3xl underline underline-offset-1 text-primary">Willkommen bei Lilly</h2>
                 <p> Der Friseursalon für alle, die etwas Besonderes suchen. <br>
                     Wir bieten dir ein breites Spektrum an Dienstleistungen rund um dein Haar. <br>
                     Unser Team besteht aus erfahrenen und kreativen Friseuren, die dich individuell beraten. <br>
                     In unserem modernen und stilvollen Salon fühlst du dich wohl und kannst dich entspannen.</p>
             </div>
-            <div class="bg-primary mt-6 mb-6 rounded-lg">
-                <h2 class="text-xl font-bold text-background">Öfnnungszeiten:</h2>
+            <div class="bg-primary mt-6 mb-6 rounded-lg px-20 py-5 text-center drop-shadow">
+                <h2 class="text-2xl font-bold text-background">Öfnnungszeiten:</h2>
                 <span class="text-xl font-bold text-background">Mo-Fr:10-20 Uhr</span><br>
                 <span class="text-xl font-bold text-background">Sa:10-18 Uhr</span><br>
-                <button class="font-bold text-xl bg-background mt-3 mr-3 ml-3 mb-3 rounded-lg">Termin vereinbaren</button>
+                <button class="px-4 py-2 font-bold text-l bg-background mt-3 mr-3 ml-3 mb-3 rounded-lg">Termin vereinbaren</button>
             </div>
         </section>
         <section class="flex flex-col mt-10 pb-9 items-center">
@@ -73,5 +84,38 @@
             </div>
         </section>
     </main>
+
+    <footer class="p-12 bg-[#1d1d1d] flex justify-evenly flex-wrap gap-10">
+        <div>
+          <p class="text-xl invert">Friseursalon Lilly</p>
+          <div class="flex gap-5 mt-5 -ml-1">
+            <img src="assets\img\facebook-app-symbol.png" alt="facebook-app-symbol" class="size-8 invert">
+            <img src="assets\img\instagram-logo.png" alt="instagram-logo" class="size-8 invert">
+            <img src="assets\img\youtube.png" alt="youtube" class="size-8 invert">
+          </div>
+        </div>
+        <div class="flex">
+          <nav>
+            <ul class="flex flex-col gap-10">
+              <li class="invert"><a href="./index.html">Home</a></li>
+              <li class="invert"><a href="./services.html">Services</a></li>
+              <li class="invert"><a href="./contact.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p class="text-xl mb-2 invert">Öffnungszeiten:</p>
+          <p class="invert">Mo-Fr: 10-20 Uhr</p>
+          <p class="invert">Sa: 10-18 Uhr</p>
+        </div>
+        <div>
+          <p class="text-xl invert">Addresse:</p>
+          <p class="invert">Berliner Straße 12</p>
+          <p class="mb-4 invert">80331 München</p>
+          <p class="invert">Telefon: 030-12345678</p>
+          <p class="invert">Email: lilly@salon.de</p>
+          
+        </div>
+      </footer>
 </body>
 </html>
