@@ -1,59 +1,77 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          fontSize: {
-            sm: "0.750rem",
-            base: "1rem",
-            xl: "1.333rem",
-            "2xl": "1.777rem",
-            "3xl": "2.369rem",
-            "4xl": "3.158rem",
-            "5xl": "4.210rem",
-          },
-          colors: {
-            text: "#180202",
-            background: "#fafafa",
-            primary: "#ffaa99",
-            secondary: "#e6e6e5",
-          },
-          fontFamily: {
-            "dm-serif": ["DM Serif Display", "ui-serif", "Georgia"],
-          },
-          fontWeight: {
-            normal: "400",
-            bold: "700",
-          },
-        },
-      };
-    </script>
-    <title>Friseur</title>
-  </head>
-  <body class="font-dm-serif">
-    <header>
-      <h1>LOGO</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container mx-auto bg-background">
-      <section>Home</section>
+   <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                     colors: {
+                        'text': '#180202',
+                        'background': '#fafafa',
+                        'primary': '#ffaa99',
+                        'secondary': '#e6e6e5'
+                    },
+                    fontSize: {
+                        sm: '0.750rem',
+                        base: '1rem',
+                        xl: '1.333rem',
+                        '2xl': '1.777rem',
+                        '3xl': '2.369rem',
+                        '4xl': '3.158rem',
+                        '5xl': '4.210rem',
+                    },
+                    fontFamily: {
+                        heading: 'DM Serif Display',
+                        body: 'DM Serif Display',
+                    },
+                    fontWeight: {
+                        normal: '400',
+                        bold: '700',
+                    },
+                },
+            },
+        };
+      </script>
+    <title>Friseursalon Lilly</title>
+</head>
+<body>
+    <main class="bg-background text-text-base font-body font-normal">
+        <section class="bg-primary flex justify-around max-[500px]:flex-col max-[500px]:items-center">
+            <div class="bg-background m-6 grid rounded-lg max-[500px]:w-50">
+                <h1 class="font-heading font-bold text-2xl mt-6 ml-6 mr-4 text-primary">Verliebt dich neu <br>in deine Haare.</h1>
+                <p class="ml-6 mr-6">Bei Lilly bist du in den besten Händen.</p>
+            </div>
+            <div>
+                <img class="size-64 mt-6 mb-6 rounded-lg" src="/Friseur/assets/img/Hero Image.png" alt="Frau mit schöner Styling">
+            </div>
+        </section>
+        <section class="flex justify-around max-[500px]:flex-col max-[500px]:items-center">
+            <div class="mt-6 mb-6 mr-4 ml-4">
+                <h2 class="font-heading font-bold text-2xl underline underline-offset-1 text-primary">Willkommen bei Lilly</h2>
+                <p> Der Friseursalon für alle, die etwas Besonderes suchen. <br>
+                    Wir bieten dir ein breites Spektrum an Dienstleistungen rund um dein Haar. <br>
+                    Unser Team besteht aus erfahrenen und kreativen Friseuren, die dich individuell beraten. <br>
+                    In unserem modernen und stilvollen Salon fühlst du dich wohl und kannst dich entspannen.</p>
+            </div>
+            <div class="bg-primary mt-6 mb-6 rounded-lg">
+                <h2 class="text-xl font-bold text-background">Öfnnungszeiten:</h2>
+                <span class="text-xl font-bold text-background">Mo-Fr:10-20 Uhr</span><br>
+                <span class="text-xl font-bold text-background">Sa:10-18 Uhr</span><br>
+                <button class="font-bold text-xl bg-background mt-3 mr-3 ml-3 mb-3 rounded-lg">Termin vereinbaren</button>
+            </div>
+        </section>
+        <section class="flex flex-col mt-10 pb-9 items-center">
+            <h2 class="font-bold text-2xl mb-6 text-primary">Zufriedene Kunden</h2>
+            <div class="grid grid-rows-1 grid-cols-4 gap-3 max-[500px]:grid-rows-4 max-[500px]:grid-cols-1">
+                <img class="size-40 rounded-lg" src="/Friseur/assets/img/Rectangle 16.png" alt="Zufriedne Kunde 1">
+                <img class="size-40 rounded-lg" src="/Friseur/assets/img/Rectangle 17.png" alt="Zufriedne Kunde 2">
+                <img class="size-40 rounded-lg" src="/Friseur/assets/img/Rectangle 18.png" alt="Zufriedne Kunde 3">
+                <img class="size-40 rounded-lg" src="/Friseur/assets/img/Rectangle 19.png" alt="Zufriedne Kunde 4">
+            </div>
+        </section>
     </main>
-    <footer>footer</footer>
-  </body>
+</body>
 </html>
