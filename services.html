@@ -42,22 +42,25 @@
     <title>Friseur</title>
   </head>
   <body class="font-dm-serif">
-    <header>
-      <h1>LOGO</h1>
+    <header class="font-body p-10 flex flex-wrap gap-8 items-center justify-between">
+      <h1 class="text-xl bg-primary p-2 rounded-md drop-shadow-md">Friseursalon Lilly</h1>
       <nav>
-        <ul>
+        <ul class="flex gap-10 text-xl">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./contact.html">Kontakt</a></li>
         </ul>
       </nav>
+      <div class="w-[122px] h-0"></div>
     </header>
-    <div class="w-full">
-      <figure>
-        <img src="./assets/img/Banner.png" alt="ein Image über Haare" class="block w-full"/>
-      </figure>
-    </div>
     <main class="container flex flex-col items-center justify-center m-auto">
+      <section>
+      <div class="w-full">
+        <figure>
+          <img src="./assets/img/Banner.png" alt="ein Image über Haare" class="block w-full"/>
+        </figure>
+      </div>
+     </section>
       <section class="flex flex-col items-center justify-center">
         <h1 class="text-xl md:text-3xl  my-6">Unsere Services für dein Haar</h1>
         <p class="text-center">
@@ -83,6 +86,37 @@
         </div>
       </section>
     </main>
-    <footer>footer</footer>
+    <footer class="font-body p-12 bg-[#1d1d1d] flex justify-evenly flex-wrap gap-10">
+      <div>
+        <p class="text-xl !text-white">Friseursalon Lilly</p>
+        <div class="flex gap-5 mt-5 -ml-1">
+          <img src="assets\img\facebook-app-symbol.png" alt="facebook-app-symbol" class="size-8 invert">
+          <img src="assets\img\instagram-logo.png" alt="instagram-logo" class="size-8 invert">
+          <img src="assets\img\youtube.png" alt="youtube" class="size-8 invert">
+        </div>
+      </div>
+      <div class="flex">
+        <nav>
+          <ul class="flex flex-col gap-10">
+            <li class="!text-white"><a href="./index.html">Home</a></li>
+            <li class="!text-white"><a href="./services.html">Services</a></li>
+            <li class="!text-white"><a href="./contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <p class="text-xl mb-2 !text-white">Öffnungszeiten:</p>
+        <p class="!text-white">Mo-Fr: 10-20 Uhr</p>
+        <p class="!text-white">Sa: 10-18 Uhr</p>
+      </div>
+      <div>
+        <p class="text-xl !text-white">Addresse:</p>
+        <p class="!text-white">Berliner Straße 12</p>
+        <p class="mb-4 !text-white">80331 München</p>
+        <p class="!text-white">Telefon: 030-12345678</p>
+        <p class="!text-white">Email: lilly@salon.de</p>
+        
+      </div>
+    </footer>
   </body>
 </html>
