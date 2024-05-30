@@ -12,36 +12,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {
-          fontSize: {
-            sm: "0.750rem",
-            base: "1rem",
-            xl: "1.333rem",
-            "2xl": "1.777rem",
-            "3xl": "2.369rem",
-            "4xl": "3.158rem",
-            "5xl": "4.210rem",
+          theme: {
+              extend: {
+                   colors: {
+                      'text': '#180202',
+                      'background': '#fafafa',
+                      'primary': '#ffaa99',
+                      'secondary': '#e6e6e5'
+                  },
+                  fontSize: {
+                      sm: '0.750rem',
+                      base: '1rem',
+                      xl: '1.333rem',
+                      '2xl': '1.777rem',
+                      '3xl': '2.369rem',
+                      '4xl': '3.158rem',
+                      '5xl': '4.210rem',
+                  },
+                  fontFamily: {
+                      heading: 'DM Serif Display',
+                      body: 'DM Serif Display',
+                  },
+                  fontWeight: {
+                      normal: '400',
+                      bold: '700',
+                  },
+              },
           },
-          colors: {
-            text: "#180202",
-            white: "#fff",
-            background: "#fafafa",
-            primary: "#ffaa99",
-            secondary: "#e6e6e5",
-          },
-          fontFamily: {
-            "dm-serif": ["DM Serif Display", "ui-serif", "Georgia"],
-          },
-          fontWeight: {
-            normal: "400",
-            bold: "700",
-          },
-        },
       };
     </script>
     <title>Friseur</title>
   </head>
-  <body class="font-dm-serif">
+  <body>
     <header class="font-body p-10 flex flex-wrap gap-8 items-center justify-between">
       <h1 class="text-xl bg-primary p-2 rounded-md drop-shadow-md">Friseursalon Lilly</h1>
       <nav>
